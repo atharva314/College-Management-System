@@ -134,7 +134,7 @@ class Library:
                             smtp.ehlo()
                             smtp.starttls()
                             smtp.ehlo()
-                            smtp.login("vesit.official@gmail.com","VESIT@1234")
+                            smtp.login("","")
                             subject = "V.E.S.I.T LIBRARY BOT"
                             body = 'BOOK ID                    ' + self.ID.get() + '\n' + 'AUTHOR NAME        '+ self.author.get() + '\n' + 'TITLE                         ' + self.title.get() + '\n' + 'DUE DATE                  ' + self.due.get() + '\n' + 'MOBILE NO               ' + self.mobno.get()   
                             msg = f'Subject: {subject}\n\n{body}'
