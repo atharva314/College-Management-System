@@ -115,7 +115,7 @@ class Fee():
                 smtp.ehlo()
                 smtp.starttls()
                 smtp.ehlo()
-                smtp.login("vesit.official@gmail.com","VESIT@1234")
+                smtp.login("","")
                 subject = "V.E.S.I.T FEE RECEIPT"
                 body = 'NUMBER                  ' + self.recpt.get() + '\n' + 'NAME                       ' + self.name.get() + '\n' + 'BRANCH                  ' + self.branch.get() + '\n' + 'SEMESTER              ' + self.sem.get() + '\n' + 'PAID AMOUNT    ' +str(self.paid.get())  
                 msg = f'Subject: {subject}\n\n{body}'
